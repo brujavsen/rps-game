@@ -1,0 +1,99 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+body {
+    font-size: 2rem;
+    font-family: 'Rowdies', cursive;
+}
+
+/* Imagenes papel,piedra,tijera */
+img {
+    border: none;
+    border-radius: 10%;
+    height: 300px;
+    width: 300px;
+    object-fit: center;
+    margin: 2rem;
+}
+
+/* Resultados */
+p {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+.ganador {
+    color: greenyellow;
+    text-shadow: 1px 1px 1px black;
+}
+.perdedor {
+    color: rgb(253, 62, 62);
+    text-shadow: 1px 1px 1px black;
+}
+.empate {
+    color: rgb(204, 202, 202);
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Tablero de juego */
+.container {
+    height: 60rem;
+    background-color: rgb(6, 114, 78);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min(90%, 120rem); /* Forma más reciente */
+    margin: 0 auto;
+}
+
+/* Botonera */
+.option-style {
+    background-color: rgb(146, 145, 145);
+    height: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+input {
+    border: none;
+    background: none;
+}
+.rock-style {
+    background-color: rgb(7, 7, 7);
+    color: rgb(255, 100, 185);
+}
+.rock-style:hover {
+    background-color: rgb(255, 100, 185);
+    color: rgb(7, 7, 7);
+    cursor: pointer;
+}
+
+.paper-style {
+    background-color: rgb(7, 7, 7);
+    color: rgb(255, 100, 185);
+}
+.paper-style:hover {
+    background-color: rgb(255, 100, 185);
+    color: rgb(7, 7, 7);
+    cursor: pointer;
+}
+
+.scissor-style {
+    background-color: rgb(7, 7, 7);
+    color: rgb(255, 100, 185);
+}
+.scissor-style:hover {
+    background-color: rgb(255, 100, 185);
+    color: rgb(7, 7, 7);
+    cursor: pointer;
+}

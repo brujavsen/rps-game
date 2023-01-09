@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebitas</title>
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <div class="container">
+        <div id="result-machine">
+        </div>
+        <div class="option-style" id="option-game">
+            <input class="rock-style" id="rock" type="button" value="Piedra" onclick="juegoPPT(0)">
+            <input class="paper-style" id="paper" type="button" value="Papel" onclick="juegoPPT(1)">
+            <input class="scissor-style" id="scissor" type="button" value="Tijera" onclick="juegoPPT(2)">
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
